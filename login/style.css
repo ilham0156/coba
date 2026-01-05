@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #ff7a00;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 380px; /* 🔥 ini yang bikin tampilan tidak terlalu panjang */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header-img-box {
+  width: 100%;
+  height: 160px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.welcome {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 25px;
+  line-height: 32px;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/* Input Box lebih kecil */
+.input-box {
+  background: #fff;
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 15px;
+  max-width: 350px; /* 🔥 membatasi panjang */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-box input {
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+}
+
+.password-box {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+/* Tombol Login lebih kecil */
+.login-btn {
+  width: 80%; /* 🔥 tidak lagi full width */
+  max-width: 260px;
+  margin: 30px auto 0 auto;
+  padding: 14px;
+  background: #4527ff;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+/* Forget password */
+.forget {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.8;
+  text-decoration: none;
+}

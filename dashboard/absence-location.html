@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GPS Location - Ameesa</title>
+    <style>
+      body {
+        margin: 0;
+        background: #ff7a00;
+        font-family: Arial;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+      }
+      .status-box {
+        background: white;
+        color: #333;
+        padding: 30px;
+        margin: 20px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fetching Location...</h1>
+    <div class="status-box">
+      <p id="location-text">Mencari Koordinat GPS...</p>
+    </div>
+    <a href="absence.html" style="color: white">Kembali</a>
+
+    <script>
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            document.getElementById(
+              "location-text"
+            ).innerHTML = `<b>Latitude:</b> ${lat}<br><b>Longitude:</b> ${lon}<br><br><span style="color:green">Lokasi Berhasil Didapat!</span>`;
+          },
+          (err) => {
+            document.getElementById("location-text").innerHTML =
+              "Gagal mengambil lokasi. Pastikan GPS aktif.";
+          }
+        );
+      } else {
+        document.getElementById("location-text").innerHTML =
+          "Browser tidak mendukung GPS.";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ameesa Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header-img-box"></div>
+
+      <h2 class="welcome">Welcome to<br />Ameesa Management App</h2>
+
+      <h3 class="login-title">Login</h3>
+
+      <div class="input-box">
+        <input id="username" type="text" placeholder="Username" />
+      </div>
+
+      <div class="input-box password-box">
+        <input id="password" type="password" placeholder="Password" />
+        <span class="eye">👁️</span>
+      </div>
+
+      <button id="loginBtn" class="login-btn">Login</button>
+
+      <a href="#" class="forget">Forget password?</a>
+    </div>
+
+    <script>
+      document
+        .getElementById("loginBtn")
+        .addEventListener("click", function () {
+          let user = document.getElementById("username").value;
+          let pass = document.getElementById("password").value;
+
+          if (user === "" || pass === "") {
+            alert("Username dan password harus diisi!");
+            return;
+          }
+
+          if (user === "admin" && pass === "123") {
+            localStorage.setItem("isLoggedIn", "true");
+
+            // Pindah ke dashboard
+            window.location.href = "../dashboard/dashboard.html";
+          } else {
+            alert("Username atau password salah!");
+          }
+        });
+    </script>
+  </body>
+</html>

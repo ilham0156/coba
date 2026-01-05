@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Meeting</title>
+    <link rel="stylesheet" href="meeting.css" />
+  </head>
+  <body>
+    <div class="header">
+      <span class="time">9:41</span>
+      <h1 class="title">New Meeting</h1>
+    </div>
+
+    <div class="container">
+      <!-- Title Input -->
+      <div class="card input-card">
+        <div class="icon-box">T</div>
+        <input type="text" placeholder="Title" />
+      </div>
+
+      <!-- Participants -->
+      <div class="card">
+        <div class="row">
+          <div class="left">
+            <span class="icon">👥</span>
+            <p>Add Participants</p>
+          </div>
+          <span class="arrow">›</span>
+        </div>
+
+        <div class="participant-list">
+          <div class="person">
+            <img src="manager.png" />
+            <div>
+              <p class="role">Manager Assistant</p>
+              <p class="name">Natasha Smith</p>
+            </div>
+          </div>
+
+          <div class="person">
+            <img src="designer.png" />
+            <div>
+              <p class="role">UX/UI</p>
+              <p class="name">Erika</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Place -->
+      <div class="card">
+        <div class="row">
+          <div class="left">
+            <span class="icon">🏢</span>
+            <p>Place</p>
+          </div>
+          <span class="arrow">›</span>
+        </div>
+
+        <div class="place-box">
+          <img src="room.png" />
+          <div>
+            <p class="role">18 Seats</p>
+            <p class="name">Pantry</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Date & Time -->
+      <div class="card">
+        <div class="row">
+          <div class="left">
+            <span class="icon">⏰</span>
+            <p>Date & Time</p>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="row space">
+          <p>Start</p>
+          <p class="value">17 February 13:00</p>
+        </div>
+
+        <div class="row space">
+          <p>End</p>
+          <p class="value">17 February 13:30</p>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="card input-card">
+        <div class="icon-box">I</div>
+        <input type="text" placeholder="Description" />
+      </div>
+
+      <!-- Button -->
+      <button class="create-btn">Create Meeting</button>
+    </div>
+  </body>
+</html>

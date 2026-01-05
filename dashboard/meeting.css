@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background: #ff7a00;
+  font-family: Arial;
+}
+
+.header {
+  padding: 20px;
+}
+
+.time {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title {
+  margin-top: 15px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+.arrow {
+  font-size: 30px;
+  opacity: 0.5;
+}
+
+/* Person list */
+.participant-list,
+.place-box {
+  margin-top: 15px;
+}
+
+.person,
+.place-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.person img,
+.place-box img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.role {
+  font-size: 14px;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Line divider */
+.line {
+  height: 1px;
+  background: #ddd;
+  margin: 15px 0;
+}
+
+/* Input cards */
+.input-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-box {
+  background: #eee;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.input-card input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+/* Button */
+.create-btn {
+  width: 100%;
+  padding: 18px;
+  background: #6753ff;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}

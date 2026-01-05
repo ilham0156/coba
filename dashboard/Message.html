@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ameesa Message</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+      body {
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .mobile-wrapper {
+        width: 375px;
+        height: 812px;
+        background: white;
+        border-radius: 40px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      }
+
+      .header {
+        padding: 40px 20px 10px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .header-title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+      .header-title i {
+        font-size: 24px;
+      }
+      .header-title h1 {
+        font-size: 20px;
+      }
+
+      .search-box {
+        background: #f0f2f5;
+        border-radius: 20px;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .search-box input {
+        border: none;
+        background: transparent;
+        outline: none;
+        width: 100%;
+      }
+
+      .chat-list {
+        flex: 1;
+        overflow-y: auto;
+      }
+      .chat-item {
+        display: flex;
+        padding: 15px 20px;
+        align-items: center;
+        border-bottom: 1px solid #f9f9f9;
+        text-decoration: none;
+        color: black;
+      }
+      .chat-item:hover {
+        background: #fdfdfd;
+      }
+      .chat-item img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      .chat-info h4 {
+        font-size: 16px;
+        margin-bottom: 3px;
+      }
+      .chat-info p {
+        font-size: 13px;
+        color: #777;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 240px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mobile-wrapper">
+      <div class="header">
+        <div class="header-title">
+          <i class="far fa-comment-alt"></i>
+          <h1>Ameesa Message</h1>
+        </div>
+        <div class="search-box">
+          <i class="fas fa-search" style="color: #999"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="chat-list">
+        <a href="#" class="chat-item">
+          <img
+            src="https://ui-avatars.com/api/?name=Natasha&background=random"
+            alt="N"
+          />
+          <div class="chat-info">
+            <h4>Natasha</h4>
+            <p>Sir, we are waiting you in the meeting room.</p>
+          </div>
+        </a>
+        <a href="#" class="chat-item">
+          <img
+            src="https://ui-avatars.com/api/?name=Rahma&background=random"
+            alt="R"
+          />
+          <div class="chat-info">
+            <h4>Rahma</h4>
+            <p>Good Evening, Mrs.</p>
+          </div>
+        </a>
+        <a href="#" class="chat-item">
+          <img
+            src="https://ui-avatars.com/api/?name=Muhaemin&background=random"
+            alt="M"
+          />
+          <div class="chat-info">
+            <h4>Muhaemin</h4>
+            <p>Room, floor 3</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

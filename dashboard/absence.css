@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background: #ff7a00;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.top-header {
+  padding: 25px;
+  color: white; /* Tambahan agar teks terlihat di background oranye */
+}
+
+.time {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title {
+  margin-top: 25px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* WRAPPER AGAR TOMBOL TEPAT DI TENGAH */
+.btn-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* TOMBOL */
+.menu-box {
+  width: 80%;
+  max-width: 420px;
+  background: white;
+  padding: 25px;
+  margin: 18px 0;
+
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #b3b3b3;
+
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.18);
+
+  cursor: pointer;
+  transition: transform 0.2s; /* Tambahan efek tekan */
+}
+
+.menu-box:active {
+  transform: scale(0.95);
+}
+
+/* NAV BAWAH */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Tambahan agar pas di kiri */
+  width: 100%;
+  background: #eaeaea;
+  padding: 15px 30px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box; /* Tambahan agar padding tidak meluber */
+}
+
+.nav-icon {
+  width: 40px;
+}

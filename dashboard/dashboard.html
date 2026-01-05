@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ameesa Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+    <style>
+      /* Style tambahan untuk memastikan icon rapi dan berwarna putih seperti di gambar */
+      .menu-item i {
+        font-size: 30px;
+        background-color: white;
+        color: #ff8c00; /* Warna oranye sesuai dashboard */
+        padding: 15px;
+        border-radius: 15px;
+        margin-bottom: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .menu-link {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="top-header">
+      <div class="time">9:41</div>
+      <div class="icons">
+        <i class="fas fa-file-alt" style="color: white; margin-right: 15px"></i>
+        <i class="fas fa-bell" style="color: white"></i>
+      </div>
+      <h1 class="title">Dashboard</h1>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://ui-avatars.com/api/?name=Aurellia+Syaputri&background=random"
+        class="photo"
+      />
+      <h2 class="name">Aurellia Syaputri</h2>
+      <p class="label">Live Attendance</p>
+      <h1 class="clock">08:34 AM</h1>
+      <p class="date">Fri, 26 January 2024</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-item" onclick="goToAbsence()">
+        <i class="fas fa-user-check"></i>
+        <p>Absence</p>
+      </div>
+
+      <div class="menu-item">
+        <i class="fas fa-camera"></i>
+        <p>Camera</p>
+      </div>
+
+      <div class="menu-item">
+        <i class="fas fa-newspaper"></i>
+        <p>News</p>
+      </div>
+
+      <div class="menu-item" onclick="goMeeting()">
+        <i class="fas fa-users"></i>
+        <p>Meeting</p>
+      </div>
+
+      <div class="menu-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Gps</p>
+      </div>
+
+      <a href="message.html" class="menu-link">
+        <div class="menu-item">
+          <i class="fas fa-comment-dots"></i>
+          <p>Message</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="bottom-nav">
+      <i class="fas fa-home" style="font-size: 24px; color: #4a90e2"></i>
+      <i class="fas fa-cog" style="font-size: 24px; color: #4a90e2"></i>
+    </div>
+
+    <script>
+      function goToAbsence() {
+        window.location.href = "absence.html";
+      }
+      function goMeeting() {
+        window.location.href = "meeting.html";
+      }
+    </script>
+  </body>
+</html>

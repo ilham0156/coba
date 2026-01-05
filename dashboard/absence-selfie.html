@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Selfie Absence - Ameesa</title>
+    <style>
+      body {
+        margin: 0;
+        background: #ff7a00;
+        font-family: Arial;
+        text-align: center;
+        color: white;
+      }
+      video {
+        width: 90%;
+        max-width: 400px;
+        border-radius: 20px;
+        margin-top: 20px;
+        border: 5px solid white;
+      }
+      .snap-btn {
+        padding: 15px 30px;
+        background: white;
+        color: #ff7a00;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Take a Selfie</h1>
+    <video id="video" autoplay playsinline></video>
+    <br />
+    <button class="snap-btn" onclick="takeSnapshot()">AMBIL FOTO</button>
+    <br /><br />
+    <a href="absence.html" style="color: white">Kembali</a>
+
+    <script>
+      const video = document.getElementById("video");
+      // Akses Kamera Otomatis
+      navigator.mediaDevices
+        .getUserMedia({ video: { facingMode: "user" } })
+        .then((stream) => {
+          video.srcObject = stream;
+        })
+        .catch((err) => {
+          alert("Kamera tidak diizinkan: " + err);
+        });
+
+      function takeSnapshot() {
+        alert("Foto berhasil diambil!");
+        window.location.href = "absence.html";
+      }
+    </script>
+  </body>
+</html>
